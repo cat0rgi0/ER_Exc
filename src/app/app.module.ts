@@ -14,13 +14,7 @@ import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
-    AppComponent,
-    OrdersComponentComponent,
-    OrdersDetailComponent,
-    UsersDetailComponent,
-    UsersComponentComponent,
-    ProductsDetailComponent,
-    ProductsComponentComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
