@@ -30,7 +30,7 @@ export class SidemenuComponent implements OnInit {
   }
 
   gotoPage(item: IMenuItem){
-    this.router.navigate(['/' + item.link])
+    this.router.navigate(['/generic/' + item.link])
   }
 
 }

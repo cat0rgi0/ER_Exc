@@ -6,13 +6,13 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DataServiceService {
 
-  endPoint: string = 'http://127.0.0.1:4200/'
+  endPoint: string = 'http://127.0.0.1:4200/assets/'
 
   constructor(
     private client: HttpClient
   ) { }
 
   public getData(name: string){
-    return this.client.get(this.endPoint + name);
+    return this.client.get(this.endPoint + name + '.json');
   }
 }
