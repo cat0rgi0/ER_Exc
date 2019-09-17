@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { OrdersListComponent } from './components/orders/orders-list/orders-list.component';
 import { ProductsListComponent } from './components/products/products-list/products-list.component';
-import {UsersComponent} from './components/users/users.component';
+import { GenericListComponent } from './components/generic/generic-list/generic-list.component';
 
 
 const routes: Routes = [
@@ -15,8 +15,8 @@ const routes: Routes = [
     component: ProductsListComponent
   },
   {
-    path: 'users',
-    component: UsersComponent
+    path: 'generic/:name',
+    component: GenericListComponent
   }
 ];
 
