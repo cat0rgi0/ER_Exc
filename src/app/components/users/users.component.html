@@ -1,0 +1,24 @@
+<p-table [value]="users">
+  <ng-template pTemplate="header">
+    <tr>
+      <th style="width: 4em"></th>
+      <th *ngFor="let col of clm">
+        {{col.header}}
+      </th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-user>
+    <tr>
+      <td>
+        <button type="button" pButton (click)="selectedUser($event,user,op3)" icon="pi pi-search"></button>
+      </td>
+      <td *ngFor="let col of clm">
+        {{user[col.field]}}
+      </td>
+    </tr>
+  </ng-template>
+</p-table>
+
+<p-overlayPanel #op3>
+  <img src="assets/showcase/images/demo/car/{{selectedUser.id}}.png" *ngIf="selectedUser"/>
+</p-overlayPanel>
