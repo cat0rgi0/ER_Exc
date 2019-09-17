@@ -1,0 +1,10 @@
+<!-- Vertical navbar -->
+<div class="vertical-nav bg-white" id="sidebar"> 
+	<ul class="nav flex-column bg-white mb-0">
+	  <li class="nav-item" *ngFor="let item of menuItems" (click)="gotoPage(item)">
+		<a class="nav-link text-dark font-italic bg-light">
+			{{item.description}}
+		</a>
+	  </li>
+	</ul>
+</div>
