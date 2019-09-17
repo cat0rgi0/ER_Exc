@@ -2,25 +2,25 @@
   {
     "Order" : "123asd123123",
     "Date": "09/09/2019",
-    "ProductList": [],
+    "ProductList": "empty",
     "UserOwnerId": 1,
     "TotEuro": 100
   },{
     "Order" : "123123Asd",
     "Date": "09/09/2019",
-    "ProductList": [],
+    "ProductList": "empty",
     "UserOwnerId": 1,
     "TotEuro": 100
   },{
     "Order" : "123123123",
     "Date": "09/09/2019",
-    "ProductList": [],
+    "ProductList": "empty",
     "UserOwnerId": 1,
     "TotEuro": 100
   },{
     "Order" : "12312312ldp12",
     "Date": "09/09/2019",
-    "ProductList": [],
+    "ProductList": "empty",
     "UserOwnerId": 1,
     "TotEuro": 100
   }
