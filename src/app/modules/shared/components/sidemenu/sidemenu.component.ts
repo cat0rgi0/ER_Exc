@@ -15,11 +15,11 @@ export class SidemenuComponent implements OnInit {
       description: 'Users'
     },
     {
-      link: 'products',
+      link: '/generic/products',
       description: 'Products'
     },
     {
-      link: 'orders',
+      link: '/generic/orders',
       description: 'Orders'
     },
   ];
@@ -29,8 +29,8 @@ export class SidemenuComponent implements OnInit {
   ngOnInit() {
   }
 
-  gotoPage(item: IMenuItem){
-    this.router.navigate(['/generic/' + item.link])
+  gotoPage(item: IMenuItem) {
+    this.router.navigate([ item.link]);
   }
 
 }
