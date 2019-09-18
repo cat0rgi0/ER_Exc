@@ -10,12 +10,15 @@ import { UsersComponent } from './components/users/users.component';
 import {TableModule} from 'primeng/table';
 import {OverlayPanelModule} from 'primeng/overlaypanel';
 import { GenericListComponent } from './components/generic/generic-list/generic-list.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
-    GenericListComponent
+    GenericListComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +27,8 @@ import { GenericListComponent } from './components/generic/generic-list/generic-
     SharedModule,
     HttpClientModule,
     TableModule,
-    OverlayPanelModule
+    OverlayPanelModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

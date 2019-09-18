@@ -1,4 +1,6 @@
-    <p-table [columns]="cols" [value]="list">
+<loader *ngIf="isLoading">
+</loader> 
+    <p-table [columns]="cols" [value]="list" *ngIf="!isLoading">
         <ng-template pTemplate="header" let-columns>
             <tr>
                 <th *ngFor="let col of columns">

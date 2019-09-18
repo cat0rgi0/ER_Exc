@@ -10,7 +10,7 @@
   <ng-template pTemplate="body" let-user>
     <tr>
       <td>
-        <button type="button" pButton (click)="selectedUser($event,user,op3)" icon="pi pi-search"></button>
+        <button type="button" pButton (click)="selectUser($event,user,op3)" icon="pi pi-search"></button>
       </td>
       <td *ngFor="let col of clm">
         {{user[col.field]}}

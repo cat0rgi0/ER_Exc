@@ -11,7 +11,7 @@ export class SidemenuComponent implements OnInit {
 
   public menuItems: Array<IMenuItem> = [
     {
-      link: 'users',
+      link: '/generic/users',
       description: 'Users'
     },
     {

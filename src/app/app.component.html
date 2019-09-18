@@ -1,4 +1,4 @@
 <sidemenu></sidemenu>
-<div class="page-content p-5" id="content">
+<div class="page-content p-5" *ngIf="!isLoading" id="content">
   <router-outlet></router-outlet>
 </div>

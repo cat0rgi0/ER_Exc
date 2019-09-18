@@ -26,7 +26,7 @@ export class UsersComponent implements OnInit {
 
   }
 
-  selectItem(event, user: Users, overlaypanel: OverlayPanel) {
+  selectUser(event, user: Users, overlaypanel: OverlayPanel) {
     this.selectedUser = user;
     overlaypanel.toggle(event);
   }
